@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -25,8 +26,85 @@
 </head>
 
 <body>
-    <div class="w-full bg-zinc-900">
+    <div class="w-full">
+        <header class="cb-navbar">
+            <div class="cb-navbar-backdrop"></div><a class="cb-navbar-logo" href="/" aria-label="Home">
+                <h3>UNIVERSAL BOX</h3>
+            </a>
+            <a class="cb-navbar-logo -clone" href="/" aria-label="Home">
+                <h3>UNIVERSAL BOX</h3>
+            </a>
+            
+            <div class="cb-navbar-toggle"><button class="cb-btn cb-btn_menu" aria-label="Toggle menu"
+                    aria-controls="navbar-menu" tabindex="0" data-cursor="-menu"
+                    data-cursor-stick><span></span><span></span></button></div>
+            <div class="cb-navbar-menu" id="navbar-menu">
+                <div class="cb-navbar-menu-top">
+                    <div class="cb-navbar-menu-grid">
+                        <div class="cb-navbar-menu-grid-col -left">
+                            <div class="cb-navbar-menu-caption">
+                                <h3>Social media</h3>
+                            </div>
+                            <div class="cb-navbar-menu-socials" data-cursor="-opaque">
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank" rel="noopener"><span
+                                            class="cb-btn_nav-title"><span data-text="LinkedIn">LinkedIn</span></span></a></div>
+                               
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank" rel="noopener"><span
+                                            class="cb-btn_nav-title"><span data-text="Dribbble">Dribbble</span></span></a></div>
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank" rel="noopener"><span
+                                            class="cb-btn_nav-title"><span data-text="Instagram">Instagram</span></span></a>
+                                </div>
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank"
+                                        rel="noopener"><span class="cb-btn_nav-title"><span
+                                                data-text="YouTube">YouTube</span></span></a></div>
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank" rel="noopener"><span
+                                            class="cb-btn_nav-title"><span data-text="Twitter">Twitter</span></span></a></div>
+                                <div class="cb-navbar-menu-social"><a class="cb-btn cb-btn_nav"
+                                        href="/" target="_blank" rel="noopener"><span
+                                            class="cb-btn_nav-title"><span data-text="GitHub">GitHub</span></span></a></div>
+                            </div>
+                        </div>
+                        <div class="cb-navbar-menu-grid-col -right">
+                            <div class="cb-navbar-menu-caption">
+                                <h3>Menu</h3>
+                            </div>
+                            <nav class="cb-navbar-menu-navs" data-cursor="-opaque">
+                                <div class="cb-navbar-menu-nav"><a class="cb-btn cb-btn_nav" href="/"><span
+                                            class="cb-btn_nav-title"><span data-text="What we do">What we
+                                                do</span></span></a></div>
+                                <div class="cb-navbar-menu-nav"><a class="cb-btn cb-btn_nav" href="/"><span
+                                            class="cb-btn_nav-title"><span data-text="Projects">Projects</span></span></a></div>
+                                <div class="cb-navbar-menu-nav"><a class="cb-btn cb-btn_nav" href="/"><span
+                                            class="cb-btn_nav-title"><span data-text="Company">Company</span></span></a></div>
+                                <div class="cb-navbar-menu-nav"><a class="cb-btn cb-btn_nav" href="/"><span
+                                            class="cb-btn_nav-title"><span data-text="Tutorials">Tutorials</span></span></a>
+                                </div>
+                                <div class="cb-navbar-menu-nav"><a class="cb-btn cb-btn_nav" href="/"><span
+                                            class="cb-btn_nav-title"><span data-text="Contacts">Contacts</span></span></a></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="cb-navbar-menu-bottom">
+                    <div class="cb-navbar-menu-caption -rb">
+                        <h3>Get in touch</h3>
+                    </div>
+                    <div class="cb-navbar-menu-links" data-btn-links>
+                        <div class="cb-navbar-menu-link"><a class="cb-btn cb-btn_link -underline"
+                                href="mailto:deepraj21.bera@gmail.com">deepraj21@gmail.com</a></div>
+                        <div class="cb-navbar-menu-link"><a class="cb-btn cb-btn_link" href="/">Our
+                                workflow</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="parent w-full h-[1800vh] relative">
+            
             <div class="w-full sticky top-0 left-0 h-screen overflow-x-hidden">
                 <canvas class="w-full h-screen" id="canvas"></canvas>
                 <div class="absolute animate1 z-[2] text-white bottom-10 w-1/2 left-10">
@@ -76,12 +154,394 @@
             
 
         </div>
-        <div class="w-full p-10 bg-white">
-
+        <div class="w-full">
+            <section class="cb-tophead">
+                <div class="cb-tophead-fill"></div>
+                <div class="cb-tophead-content">
+                    <div class="cb-tophead-container -lg">
+                        <div class="cb-tophead-title">
+                            <h1>We are a digital<br><span style="white-space:nowrap"><video src="/assets/home/hero/header.mp4"
+                                        preload="auto" autoplay playsinline loop muted></video><em>design</em> and</span><br
+                                    class="-gxs">motion agency</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cb-summary -inverse" data-cursor="-inverse" id="resources">
+                <div class="cb-summary-fill -top -primary"></div>
+                <div class="cb-summary-content -rt">
+                    <div class="cb-summary-container -lg">
+                        <div class="cb-summary-header">
+                            <h2>Development<br> and design<br> <em>resources</em></h2>
+                        </div>
+                        <div class="cb-summary-carousel" data-cursor-text="Drag">
+                            <div class="cb-summary-entries">
+                                <div class="cb-summary-entry">
+                                    <a class="cb-entry" href="/">
+                                        <div class="cb-entry-img">
+                                            <picture><img
+                                                    src="https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    loading="lazy" alt></picture>
+                                        </div>
+                                        <div class="cb-entry-title">Frontend development</div>
+                                    </a>
+                                </div>
+                                <div class="cb-summary-entry">
+                                    <a class="cb-entry" href="/">
+                                        <div class="cb-entry-img">
+                                            <picture><img
+                                                    src="https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    loading="lazy" alt></picture>
+                                        </div>
+                                        <div class="cb-entry-title">Frontend development</div>
+                                    </a>
+                                </div>
+                                <div class="cb-summary-entry">
+                                    <a class="cb-entry" href="/">
+                                        <div class="cb-entry-img">
+                                            <picture><img
+                                                    src="https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    loading="lazy" alt></picture>
+                                        </div>
+                                        <div class="cb-entry-title">Frontend development</div>
+                                    </a>
+                                </div>
+                                <div class="cb-summary-entry">
+                                    <a class="cb-entry" href="/">
+                                        <div class="cb-entry-img">
+                                            <picture><img
+                                                    src="https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    loading="lazy" alt></picture>
+                                        </div>
+                                        <div class="cb-entry-title">Frontend development</div>
+                                    </a>
+                                </div>
+                                <div class="cb-summary-entry">
+                                    <a class="cb-entry" href="/">
+                                        <div class="cb-entry-img">
+                                            <picture><img
+                                                    src="https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    loading="lazy" alt></picture>
+                                        </div>
+                                        <div class="cb-entry-title">Frontend development</div>
+                                    </a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="cb-summary-grid">
+                            <div class="cb-summary-grid-col -left"></div>
+                            <div class="cb-summary-grid-col -right">
+                                <div class="cb-summary-text">
+                                    <p>We regularly release design courses, offer advice to newbie designers, walk you
+                                        through creating awesome effects, and share source files.</p>
+                                </div>
+                                <div class="cb-summary-more"><a class="cb-btn cb-btn_cta -inverse" href="/"><span
+                                            class="cb-btn_cta-border"></span><span
+                                            class="cb-btn_cta-ripple"><span></span></span><span class="cb-btn_cta-title"><span
+                                                data-text="View all resources">View all
+                                                resources</span></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cb-smfeed">
+                <div class="cb-smfeed-content -rt">
+                    <div class="cb-smfeed-reel">
+                        <div class="cb-smfeed-reel-wrap">
+                            <div class="cb-smfeed-reel-item">New Day —&nbsp; <em>New Inspo</em><video preload="auto" autoplay
+                                    playsinline loop muted>
+                                    <source src="/assets/smfeed/header.mp4" media="(min-width:768px)">
+                                    <source src="//:0">
+                                </video></div>
+                        </div>
+                    </div>
+                    <div class="cb-smfeed-container -sm">
+                        <div class="cb-smfeed-carousel" data-cursor-text="Drag">
+                            <div class="cb-smfeed-items">
+                                <a class="cb-smfeed-item" href="/" target="_blank"
+                                    rel="noopener">
+                                    <div class="cb-smfeed-item-img">
+                                        <picture><img
+                                                src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="Kelvin Zero UI design and graphic assets."></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -instagram">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#instagram"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                                <a class="cb-smfeed-item" href="/"
+                                    target="_blank" rel="noopener">
+                                    <div class="cb-smfeed-item-img -sm">
+                                        <picture><img src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="SafeX Graphic Assets"></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -dribbble">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#dribbble"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                                <a class="cb-smfeed-item" href="/" target="_blank"
+                                    rel="noopener">
+                                    <div class="cb-smfeed-item-img">
+                                        <picture><img
+                                                src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="Omniscia motion design"></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -instagram">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#instagram"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                                <a class="cb-smfeed-item" href="/"
+                                    target="_blank" rel="noopener">
+                                    <div class="cb-smfeed-item-img -sm">
+                                        <picture><img src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="Livespot Mobile Version"></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -dribbble">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#dribbble"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                                <a class="cb-smfeed-item" href="/" target="_blank"
+                                    rel="noopener">
+                                    <div class="cb-smfeed-item-img">
+                                        <picture><img
+                                                src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="Cuberto highlights of 2023-2024"></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -instagram">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#instagram"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                                <a class="cb-smfeed-item" href="/"
+                                    target="_blank" rel="noopener">
+                                    <div class="cb-smfeed-item-img -sm">
+                                        <picture><img src="https://images.unsplash.com/photo-1722603265489-345bcf27614a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                loading="lazy" alt="Magma Case Study"></picture>
+                                    </div>
+                                    <div class="cb-smfeed-item-source">
+                                        <div class="cb-smfeed-item-icon"><svg class="cb-svgsprite -dribbble">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#dribbble"></use>
+                                            </svg></div>
+                                        <div class="cb-smfeed-item-title">project</div>
+                                    </div>
+                                </a>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cb-outro" data-cursor="-inverse">
+                <div class="cb-outro-content">
+                    <div class="cb-outro-reel">
+                        <div class="cb-outro-reel-wrap">
+                            <div class="cb-outro-reel-item">
+                                <div class="cb-outro-header">
+                                    <h2>Follow Us</h2><span class="cb-coin"><span class="cb-coin-svg -v1"></span><span
+                                            class="cb-coin-circles"><span class="cb-coin-circle"></span><span
+                                                class="cb-coin-circle"></span><span class="cb-coin-circle"></span><span
+                                                class="cb-coin-circle"></span>
+                                            <span class="cb-coin-circle"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-outro-container -sm">
+                        <div class="cb-outro-caption">
+                            <h3>Social Media and contacts</h3>
+                        </div>
+                    </div>
+                    <div class="cb-outro-socials">
+                        <a class="cb-outro-social" href="/" rel="noopener" target="_blank">
+                            <div class="cb-outro-social-divider"></div>
+                            <div class="cb-outro-container -sm">
+                                <div class="cb-outro-social-info">
+                                    <div class="cb-outro-social-title">Instagram</div>
+                                    <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                            <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-reel">
+                                <div class="cb-outro-social-reel-wrap">
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-title">Instagram</div>
+                                    </div>
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-divider"></div>
+                        </a>
+                        <a class="cb-outro-social" href="/" rel="noopener" target="_blank">
+                            <div class="cb-outro-social-divider"></div>
+                            <div class="cb-outro-container -sm">
+                                <div class="cb-outro-social-info">
+                                    <div class="cb-outro-social-title">LinkedIn</div>
+                                    <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                            <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-reel">
+                                <div class="cb-outro-social-reel-wrap">
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-title">LinkedIn</div>
+                                    </div>
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-divider"></div>
+                        </a>
+            
+                        <a class="cb-outro-social" href="/" rel="noopener" target="_blank">
+                            <div class="cb-outro-social-divider"></div>
+                            <div class="cb-outro-container -sm">
+                                <div class="cb-outro-social-info">
+                                    <div class="cb-outro-social-title">GitHub</div>
+                                    <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                            <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-reel">
+                                <div class="cb-outro-social-reel-wrap">
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-title">GitHub</div>
+                                    </div>
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-divider"></div>
+                        </a>
+            
+            
+                        <a class="cb-outro-social" href="/" rel="noopener" target="_blank">
+                            <div class="cb-outro-social-divider"></div>
+                            <div class="cb-outro-container -sm">
+                                <div class="cb-outro-social-info">
+                                    <div class="cb-outro-social-title">Twitter</div>
+                                    <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                            <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-reel">
+                                <div class="cb-outro-social-reel-wrap">
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-title">Twitter</div>
+                                    </div>
+                                    <div class="cb-outro-social-reel-item">
+                                        <div class="cb-outro-social-arr"><svg class="cb-svgsprite -arrow-up-right">
+                                                <use xlink:href="/assets/sprites/svgsprites.svg?2#arrow-up-right"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cb-outro-social-divider"></div>
+                        </a>
+                    </div>
+                    <div class="cb-outro-container -sm">
+                        <div class="cb-outro-locations">
+                            <div class="cb-outro-location">
+                                <div class="cb-outro-location-caption">Main office</div>
+                                <div class="cb-outro-location-address">Kolkata under tala bridge<br> Garage Startup</div>
+                                <div class="cb-outro-location-action"><a class="cb-btn cb-btn_cta -md -inverse"
+                                        href="mailto:deepraj21.bera@gmail.com"><span class="cb-btn_cta-border"></span><span
+                                            class="cb-btn_cta-ripple"><span></span></span><span class="cb-btn_cta-title"><span
+                                               data-text="deepraj21@gmail.com">deepraj21@gmail.com</span></span></a></div>
+                            </div>
+                            <div class="cb-outro-location">
+                                <div class="cb-outro-location-caption">Second office</div>
+                                <div class="cb-outro-location-address">BKP Near Ganga<br> Garage Startup</div>
+                                <div class="cb-outro-location-action"><a class="cb-btn cb-btn_cta -md -inverse"
+                                        href="tel:+91 987654321"><span class="cb-btn_cta-border"></span><span
+                                            class="cb-btn_cta-ripple"><span></span></span><span class="cb-btn_cta-title"><span
+                                                data-text="+91 987654321">+91 987654321</span></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="cb-footer" data-cursor="-inverse">
+                <div class="cb-footer-bg">
+                    <div class="cb-footer-bg-media"><video crossorigin="anonymous" autoplay playsinline loop muted>
+                            <source src="/assets/footer/ropes.mp4" media="(min-width:768px)">
+                            <source src="/assets/footer/ropes-sm.mp4?2">
+                        </video></div>
+                </div>
+                <div class="cb-footer-content">
+                    <div class="cb-footer-top">
+                        <div class="cb-footer-container -sm">
+                            <div class="cb-footer-header">
+                                <h2>Have<br> <em>an idea?</em></h2>
+                            </div>
+                            <div class="cb-footer-action"><a class="cb-btn cb-btn_cta -xl -inverse" href="/"><span
+                                        class="cb-btn_cta-border"></span><span class="cb-btn_cta-ripple"><span></span></span><span
+                                        class="cb-btn_cta-title"><span data-text="Tell us">Tell us</span></span></a></div>
+                        </div>
+                    </div>
+                    <div class="cb-footer-bottom">
+                        <div class="cb-footer-container -sm">
+                            <div class="cb-footer-grid">
+                                <div class="cb-footer-grid-col -left">
+                                    <div class="cb-footer-tags">
+                                        <div class="cb-footer-tag"><a class="cb-btn cb-btn_cta -sm -inverse"
+                                                 href="mailto:deepraj21.bera@gmail.com"><span class="cb-btn_cta-border"></span><span
+                                                    class="cb-btn_cta-ripple"><span></span></span><span
+                                                    class="cb-btn_cta-title"><span
+                                                       data-text="deepraj21@gmail.com">deepraj21@gmail.com</span></span></a>
+                                        </div>
+                                        <div class="cb-footer-tag"><a class="cb-btn cb-btn_cta -sm -inverse"
+                                                href="tel:+91 987654321"><span class="cb-btn_cta-border"></span><span
+                                                    class="cb-btn_cta-ripple"><span></span></span><span
+                                                    class="cb-btn_cta-title"><span data-text="+91 987654321">+91 987654321</span></span></a></div>
+                                    </div>
+                                </div>
+                                <div class="cb-footer-grid-col -center">
+                                    <div class="cb-footer-links"><a class="cb-footer-link" href="/"><span>Privacy
+                                                Policy</span></a></div>
+                                </div>
+                                <div class="cb-footer-grid-col -right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
     </div>
-
+    <script src="/assets/js/bundle.js?v=5.3.14" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -232,6 +692,26 @@
         })
 
         preloadImage();
+    </script>
+    <script>
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date;
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "https://mc.webvisor.org/metrika/tag_ww.js", "ym");
+        ym(window.ymID = 22519915, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
     </script>
 </body>
 
